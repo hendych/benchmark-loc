@@ -1,0 +1,56 @@
+load("//Config:buck_rule_macros.bzl", "apple_test_lib", "apple_third_party_lib", "apple_create_bundle_resource")
+load("//Config:app_configs.bzl", "PREBUILT_FRAMEWORKS", "MODULE_TEST")
+
+apple_third_party_lib(
+    name = "Lib2",
+    srcs = glob([
+        "Lib2/**/*.swift",
+        "Lib2/**/*.m",
+    ]),
+    exported_headers = glob([
+        "Lib2/**/*.h"
+    ]),
+    deps = [
+        ":Lib2ResourceBundle",
+
+        "//Modules/TVLFoundation:TVLFoundation",
+        "//Modules/TVLUI:TVLUI",
+        "//Modules/TVLKit:TVLKit",
+        "//Modules/TVLStorage:TVLStorage",
+        "//Modules/TVLNetwork:TVLNetwork",
+    ],
+    frameworks = [
+        "$SDKROOT/System/Library/Frameworks/Foundation.framework",
+        "$SDKROOT/System/Library/Frameworks/UIKit.framework",
+    ]
+)
+
+apple_test_lib(
+    name = "Lib2Tests",
+    srcs = glob([
+        "Tests/**/*.m",
+        "Tests/**/*.swift"
+    ]),
+    preprocessor_flags = [
+        "-I$(location //Modules/Lib2:Lib2#iphonesimulator-x86_64,private-headers)"
+    ],
+    deps = [
+        # All Deps
+        ":Lib2",
+    ] + MODULE_TEST + PREBUILT_FRAMEWORKS
+)
+
+# Resources
+
+apple_create_bundle_resource(
+    rule_name = "Lib2ResourceBundle",
+    bundle_resource_name = "Lib2Resources",
+    info_plist = 'Lib2Resources/Info.plist',
+    image_xcassets_dirs = [
+        "Lib2Resources/Images.xcassets"
+    ],
+    resource_dirs = glob([
+        "Lib2Resources/**/*.xib",
+        "Lib2/**/*.xib"
+    ]),
+)

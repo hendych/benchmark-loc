@@ -1,0 +1,23 @@
+PODS:
+  - FoundationLib2 (0.1.0)
+  - OCMock (3.4.1)
+
+DEPENDENCIES:
+  - FoundationLib2 (from `.`)
+  - OCMock (= 3.4.1)
+
+SPEC REPOS:
+  trunk:
+    - OCMock
+
+EXTERNAL SOURCES:
+  FoundationLib2:
+    :path: "."
+
+SPEC CHECKSUMS:
+  FoundationLib2: b52c37fb434d8e0c847f40d8734401392fadd0c9
+  OCMock: 2cd0716969bab32a2283ff3a46fd26a8c8b4c5e3
+
+PODFILE CHECKSUM: 4f4d04377fea9fd381a81c249ea0f013794fd367
+
+COCOAPODS: 1.10.1

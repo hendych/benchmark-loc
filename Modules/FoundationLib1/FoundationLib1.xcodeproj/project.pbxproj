@@ -1,0 +1,1077 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0CCC6576DAC76F80E311A619 /* Pods_SandboxApp_FoundationLib1Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03FA4D1C05B7FDACDC6371EF /* Pods_SandboxApp_FoundationLib1Tests.framework */; };
+		0DBB643AF4083DC3E64D51E8 /* Pods_SandboxApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1120775A8C51566691F5FA2 /* Pods_SandboxApp.framework */; };
+		2D6E03F300E026ABC2C4B38B /* Pods_FoundationLib1EarlGreyTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59CD35ACA0FB94FE32F35C6E /* Pods_FoundationLib1EarlGreyTest.framework */; };
+		80D6C504CC534C40D6B213F5 /* Pods_FoundationLib1EarlGreyHelper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF90B2AE99EAAE99086559D3 /* Pods_FoundationLib1EarlGreyHelper.framework */; };
+		B102813624A203D1000BC503 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B102813524A203D1000BC503 /* GoogleService-Info.plist */; };
+		B1698BCF25E4DF9100070D84 /* EarlGreyTest.m in Sources */ = {isa = PBXBuildFile; fileRef = B1698BCE25E4DF9100070D84 /* EarlGreyTest.m */; };
+		B1698BDF25E4DFF000070D84 /* FoundationLib1EarlGreyHelper.bundle in Copy Helper Bundle */ = {isa = PBXBuildFile; fileRef = B1698BBE25E4DF7300070D84 /* FoundationLib1EarlGreyHelper.bundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		B1698C1125E4E11C00070D84 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B1698C0D25E4E11C00070D84 /* InfoPlist.strings */; };
+		B1698C1225E4E11D00070D84 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = B1698C0F25E4E11C00070D84 /* Localizable.strings */; };
+		B1B16F522419F58B0057E2A7 /* Dummy.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B16F512419F58B0057E2A7 /* Dummy.swift */; };
+		B1B16F562419F5A00057E2A7 /* Dummy.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B16F552419F5A00057E2A7 /* Dummy.swift */; };
+		B1BACFA824125688004057CC /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = B1BACFA424125681004057CC /* Tests.m */; };
+		B1BACFB42416025E004057CC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B1BACFB32416025E004057CC /* AppDelegate.m */; };
+		B1BACFBA2416025E004057CC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B1BACFB92416025E004057CC /* ViewController.m */; };
+		B1BACFC224160260004057CC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1BACFC024160260004057CC /* LaunchScreen.storyboard */; };
+		B1BACFC524160260004057CC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B1BACFC424160260004057CC /* main.m */; };
+		B1C111D0241F5F310067A7C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B1C111CF241F5F310067A7C7 /* Images.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B1698BF425E4E09B00070D84 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B1BACF80241255F3004057CC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B1BACFAF2416025E004057CC;
+			remoteInfo = SandboxApp;
+		};
+		B1698BFB25E4E0B200070D84 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B1BACF80241255F3004057CC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B1BACFAF2416025E004057CC;
+			remoteInfo = SandboxApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B1698BD925E4DFAF00070D84 /* Copy Helper Bundle */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(TARGET_BUILD_DIR)/../../SandboxApp.app/EarlGreyHelperBundles";
+			dstSubfolderSpec = 0;
+			files = (
+				B1698BDF25E4DFF000070D84 /* FoundationLib1EarlGreyHelper.bundle in Copy Helper Bundle */,
+			);
+			name = "Copy Helper Bundle";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		00431EAE84F5F39A317BA274 /* Pods-FoundationLib1EarlGreyTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoundationLib1EarlGreyTest.debug.xcconfig"; path = "Target Support Files/Pods-FoundationLib1EarlGreyTest/Pods-FoundationLib1EarlGreyTest.debug.xcconfig"; sourceTree = "<group>"; };
+		03FA4D1C05B7FDACDC6371EF /* Pods_SandboxApp_FoundationLib1Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SandboxApp_FoundationLib1Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0FF1ABB47E1FF48CE188F324 /* Pods-FoundationLib1EarlGreyTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoundationLib1EarlGreyTest.release.xcconfig"; path = "Target Support Files/Pods-FoundationLib1EarlGreyTest/Pods-FoundationLib1EarlGreyTest.release.xcconfig"; sourceTree = "<group>"; };
+		49FDC5AAC286DA4639816BB6 /* Pods-FoundationLib1EarlGreyHelper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoundationLib1EarlGreyHelper.release.xcconfig"; path = "Target Support Files/Pods-FoundationLib1EarlGreyHelper/Pods-FoundationLib1EarlGreyHelper.release.xcconfig"; sourceTree = "<group>"; };
+		4F2A61957CAB15E4416395B9 /* Pods-SandboxApp-FoundationLib1Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SandboxApp-FoundationLib1Tests.debug.xcconfig"; path = "Target Support Files/Pods-SandboxApp-FoundationLib1Tests/Pods-SandboxApp-FoundationLib1Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		59CD35ACA0FB94FE32F35C6E /* Pods_FoundationLib1EarlGreyTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FoundationLib1EarlGreyTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		63DAE132ABBF12731F18E6AE /* FoundationLib1.podspec */ = {isa = PBXFileReference; includeInIndex = 1; path = FoundationLib1.podspec; sourceTree = "<group>"; };
+		8C4A5839E972085D5A3149F1 /* Pods-SandboxApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SandboxApp.debug.xcconfig"; path = "Target Support Files/Pods-SandboxApp/Pods-SandboxApp.debug.xcconfig"; sourceTree = "<group>"; };
+		B102813524A203D1000BC503 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		B102813724A203EF000BC503 /* Traveloka Staging-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Traveloka Staging-Info.plist"; sourceTree = "<group>"; };
+		B1698BBE25E4DF7300070D84 /* FoundationLib1EarlGreyHelper.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FoundationLib1EarlGreyHelper.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1698BC025E4DF7300070D84 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B1698BCC25E4DF9100070D84 /* FoundationLib1EarlGreyTest.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FoundationLib1EarlGreyTest.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1698BCE25E4DF9100070D84 /* EarlGreyTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EarlGreyTest.m; sourceTree = "<group>"; };
+		B1698BD025E4DF9100070D84 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B1698C0E25E4E11C00070D84 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = ../../../Traveloka/Base.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B1698C1025E4E11C00070D84 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = ../../../Traveloka/Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		B1698C1825E4E12B00070D84 /* th */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = th; path = ../../../Traveloka/th.lproj/Localizable.strings; sourceTree = "<group>"; };
+		B1698C1925E4E12B00070D84 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = ../../../Traveloka/en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		B1698C1A25E4E12B00070D84 /* vi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = vi; path = ../../../Traveloka/vi.lproj/Localizable.strings; sourceTree = "<group>"; };
+		B1698C1B25E4E12B00070D84 /* ms */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ms; path = ../../../Traveloka/ms.lproj/Localizable.strings; sourceTree = "<group>"; };
+		B1698C1C25E4E12B00070D84 /* id */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = id; path = ../../../Traveloka/id.lproj/Localizable.strings; sourceTree = "<group>"; };
+		B1698C1D25E4E13300070D84 /* vi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = vi; path = ../../../Traveloka/vi.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B1698C1E25E4E13300070D84 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = ../../../Traveloka/en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B1698C1F25E4E13300070D84 /* ms */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ms; path = ../../../Traveloka/ms.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B1698C2025E4E13300070D84 /* id */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = id; path = ../../../Traveloka/id.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B1698C2125E4E13300070D84 /* th */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = th; path = ../../../Traveloka/th.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B1B16F512419F58B0057E2A7 /* Dummy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dummy.swift; sourceTree = "<group>"; };
+		B1B16F532419F5940057E2A7 /* Dummy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dummy.swift; sourceTree = "<group>"; };
+		B1B16F552419F5A00057E2A7 /* Dummy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dummy.swift; sourceTree = "<group>"; };
+		B1BACF92241255F4004057CC /* FoundationLib1Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FoundationLib1Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1BACFA424125681004057CC /* Tests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
+		B1BACFA524125681004057CC /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B1BACFA924125854004057CC /* Tests-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
+		B1BACFB02416025E004057CC /* SandboxApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SandboxApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1BACFB22416025E004057CC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B1BACFB32416025E004057CC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B1BACFB82416025E004057CC /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		B1BACFB92416025E004057CC /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		B1BACFC124160260004057CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B1BACFC424160260004057CC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B1BACFCA24160427004057CC /* FoundationLib1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoundationLib1.h; sourceTree = "<group>"; };
+		B1BACFCB24160427004057CC /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B1C111C9241F5EFB0067A7C7 /* FoundationLib1Resources.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FoundationLib1Resources.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1C111CB241F5EFB0067A7C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B1C111CF241F5F310067A7C7 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		E1120775A8C51566691F5FA2 /* Pods_SandboxApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SandboxApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F25EA258124696AC7035227C /* Pods-FoundationLib1EarlGreyHelper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoundationLib1EarlGreyHelper.debug.xcconfig"; path = "Target Support Files/Pods-FoundationLib1EarlGreyHelper/Pods-FoundationLib1EarlGreyHelper.debug.xcconfig"; sourceTree = "<group>"; };
+		FA9DFE832C13699B556A8BEB /* Pods-SandboxApp-FoundationLib1Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SandboxApp-FoundationLib1Tests.release.xcconfig"; path = "Target Support Files/Pods-SandboxApp-FoundationLib1Tests/Pods-SandboxApp-FoundationLib1Tests.release.xcconfig"; sourceTree = "<group>"; };
+		FC4B1B32A51D6679F0AAF7FF /* Pods-SandboxApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SandboxApp.release.xcconfig"; path = "Target Support Files/Pods-SandboxApp/Pods-SandboxApp.release.xcconfig"; sourceTree = "<group>"; };
+		FF90B2AE99EAAE99086559D3 /* Pods_FoundationLib1EarlGreyHelper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FoundationLib1EarlGreyHelper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B1698BBB25E4DF7300070D84 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80D6C504CC534C40D6B213F5 /* Pods_FoundationLib1EarlGreyHelper.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1698BC925E4DF9100070D84 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D6E03F300E026ABC2C4B38B /* Pods_FoundationLib1EarlGreyTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1BACF8F241255F4004057CC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0CCC6576DAC76F80E311A619 /* Pods_SandboxApp_FoundationLib1Tests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1BACFAD2416025E004057CC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0DBB643AF4083DC3E64D51E8 /* Pods_SandboxApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1C111C6241F5EFB0067A7C7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		00AE3C51D9E1268F3501FFF7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FF90B2AE99EAAE99086559D3 /* Pods_FoundationLib1EarlGreyHelper.framework */,
+				59CD35ACA0FB94FE32F35C6E /* Pods_FoundationLib1EarlGreyTest.framework */,
+				E1120775A8C51566691F5FA2 /* Pods_SandboxApp.framework */,
+				03FA4D1C05B7FDACDC6371EF /* Pods_SandboxApp_FoundationLib1Tests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B1698BBF25E4DF7300070D84 /* FoundationLib1EarlGreyHelper */ = {
+			isa = PBXGroup;
+			children = (
+				B1698BC025E4DF7300070D84 /* Info.plist */,
+			);
+			path = FoundationLib1EarlGreyHelper;
+			sourceTree = "<group>";
+		};
+		B1698BCD25E4DF9100070D84 /* FoundationLib1EarlGreyTest */ = {
+			isa = PBXGroup;
+			children = (
+				B1698BCE25E4DF9100070D84 /* EarlGreyTest.m */,
+				B1698BD025E4DF9100070D84 /* Info.plist */,
+			);
+			path = FoundationLib1EarlGreyTest;
+			sourceTree = "<group>";
+		};
+		B1BACF7F241255F3004057CC = {
+			isa = PBXGroup;
+			children = (
+				B1BACFAB24125AE2004057CC /* Podspec Metadata */,
+				B1BACFB12416025E004057CC /* SandboxApp */,
+				B1BACFC924160427004057CC /* FoundationLib1 */,
+				B1C111CA241F5EFB0067A7C7 /* FoundationLib1Resources */,
+				B1BACFA324125681004057CC /* Tests */,
+				B1698BBF25E4DF7300070D84 /* FoundationLib1EarlGreyHelper */,
+				B1698BCD25E4DF9100070D84 /* FoundationLib1EarlGreyTest */,
+				B1BACF8A241255F3004057CC /* Products */,
+				D569A86B07467AF651AD1E6A /* Pods */,
+				00AE3C51D9E1268F3501FFF7 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B1BACF8A241255F3004057CC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B1BACF92241255F4004057CC /* FoundationLib1Tests.xctest */,
+				B1BACFB02416025E004057CC /* SandboxApp.app */,
+				B1C111C9241F5EFB0067A7C7 /* FoundationLib1Resources.bundle */,
+				B1698BBE25E4DF7300070D84 /* FoundationLib1EarlGreyHelper.bundle */,
+				B1698BCC25E4DF9100070D84 /* FoundationLib1EarlGreyTest.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B1BACFA324125681004057CC /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				B1BACFA424125681004057CC /* Tests.m */,
+				B1BACFA924125854004057CC /* Tests-Prefix.pch */,
+				B1BACFA524125681004057CC /* Info.plist */,
+				B1B16F512419F58B0057E2A7 /* Dummy.swift */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		B1BACFAB24125AE2004057CC /* Podspec Metadata */ = {
+			isa = PBXGroup;
+			children = (
+				63DAE132ABBF12731F18E6AE /* FoundationLib1.podspec */,
+			);
+			name = "Podspec Metadata";
+			sourceTree = "<group>";
+		};
+		B1BACFB12416025E004057CC /* SandboxApp */ = {
+			isa = PBXGroup;
+			children = (
+				B1BACFB22416025E004057CC /* AppDelegate.h */,
+				B1BACFB32416025E004057CC /* AppDelegate.m */,
+				B1BACFB82416025E004057CC /* ViewController.h */,
+				B1BACFB92416025E004057CC /* ViewController.m */,
+				B1BACFC024160260004057CC /* LaunchScreen.storyboard */,
+				B1698C0D25E4E11C00070D84 /* InfoPlist.strings */,
+				B1698C0F25E4E11C00070D84 /* Localizable.strings */,
+				B102813524A203D1000BC503 /* GoogleService-Info.plist */,
+				B102813724A203EF000BC503 /* Traveloka Staging-Info.plist */,
+				B1BACFC424160260004057CC /* main.m */,
+				B1B16F552419F5A00057E2A7 /* Dummy.swift */,
+			);
+			path = SandboxApp;
+			sourceTree = "<group>";
+		};
+		B1BACFC924160427004057CC /* FoundationLib1 */ = {
+			isa = PBXGroup;
+			children = (
+				B1BACFCA24160427004057CC /* FoundationLib1.h */,
+				B1BACFCB24160427004057CC /* Info.plist */,
+				B1B16F532419F5940057E2A7 /* Dummy.swift */,
+			);
+			path = FoundationLib1;
+			sourceTree = "<group>";
+		};
+		B1C111CA241F5EFB0067A7C7 /* FoundationLib1Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B1C111CB241F5EFB0067A7C7 /* Info.plist */,
+				B1C111CF241F5F310067A7C7 /* Images.xcassets */,
+			);
+			path = FoundationLib1Resources;
+			sourceTree = "<group>";
+		};
+		D569A86B07467AF651AD1E6A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F25EA258124696AC7035227C /* Pods-FoundationLib1EarlGreyHelper.debug.xcconfig */,
+				49FDC5AAC286DA4639816BB6 /* Pods-FoundationLib1EarlGreyHelper.release.xcconfig */,
+				00431EAE84F5F39A317BA274 /* Pods-FoundationLib1EarlGreyTest.debug.xcconfig */,
+				0FF1ABB47E1FF48CE188F324 /* Pods-FoundationLib1EarlGreyTest.release.xcconfig */,
+				8C4A5839E972085D5A3149F1 /* Pods-SandboxApp.debug.xcconfig */,
+				FC4B1B32A51D6679F0AAF7FF /* Pods-SandboxApp.release.xcconfig */,
+				4F2A61957CAB15E4416395B9 /* Pods-SandboxApp-FoundationLib1Tests.debug.xcconfig */,
+				FA9DFE832C13699B556A8BEB /* Pods-SandboxApp-FoundationLib1Tests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B1698BBD25E4DF7300070D84 /* FoundationLib1EarlGreyHelper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B1698BC325E4DF7300070D84 /* Build configuration list for PBXNativeTarget "FoundationLib1EarlGreyHelper" */;
+			buildPhases = (
+				FA85398CA2E7D838D37EBCA4 /* [CP] Check Pods Manifest.lock */,
+				B1698BBA25E4DF7300070D84 /* Sources */,
+				B1698BBB25E4DF7300070D84 /* Frameworks */,
+				B1698BBC25E4DF7300070D84 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B1698BFC25E4E0B200070D84 /* PBXTargetDependency */,
+			);
+			name = FoundationLib1EarlGreyHelper;
+			productName = FoundationLib1EarlGreyHelper;
+			productReference = B1698BBE25E4DF7300070D84 /* FoundationLib1EarlGreyHelper.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		B1698BCB25E4DF9100070D84 /* FoundationLib1EarlGreyTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B1698BD125E4DF9100070D84 /* Build configuration list for PBXNativeTarget "FoundationLib1EarlGreyTest" */;
+			buildPhases = (
+				F44C7B1D8D7F621163D4CAA4 /* [CP] Check Pods Manifest.lock */,
+				B1698BC825E4DF9100070D84 /* Sources */,
+				B1698BC925E4DF9100070D84 /* Frameworks */,
+				B1698BD925E4DFAF00070D84 /* Copy Helper Bundle */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B1698BF525E4E09B00070D84 /* PBXTargetDependency */,
+			);
+			name = FoundationLib1EarlGreyTest;
+			productName = FoundationLib1EarlGreyTest;
+			productReference = B1698BCC25E4DF9100070D84 /* FoundationLib1EarlGreyTest.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		B1BACF91241255F4004057CC /* FoundationLib1Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B1BACFA0241255F4004057CC /* Build configuration list for PBXNativeTarget "FoundationLib1Tests" */;
+			buildPhases = (
+				B59BD78610065CC3A6999617 /* [CP] Check Pods Manifest.lock */,
+				B1BACF8E241255F4004057CC /* Sources */,
+				B1BACF8F241255F4004057CC /* Frameworks */,
+				B1BACF90241255F4004057CC /* Resources */,
+				5ECE77A22B40BC768C247DC7 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FoundationLib1Tests;
+			productName = FoundationLib1Tests;
+			productReference = B1BACF92241255F4004057CC /* FoundationLib1Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B1BACFAF2416025E004057CC /* SandboxApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B1BACFC824160260004057CC /* Build configuration list for PBXNativeTarget "SandboxApp" */;
+			buildPhases = (
+				AD2CB4DD59F5983AF16A14CB /* [CP] Check Pods Manifest.lock */,
+				B1BACFAC2416025E004057CC /* Sources */,
+				B1BACFAD2416025E004057CC /* Frameworks */,
+				B1BACFAE2416025E004057CC /* Resources */,
+				B19EFB8924C1A2EF00F2F696 /* ShellScript */,
+				9E7C363A57F8660855B46255 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SandboxApp;
+			productName = SandboxApp;
+			productReference = B1BACFB02416025E004057CC /* SandboxApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B1C111C8241F5EFB0067A7C7 /* FoundationLib1Resources */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B1C111CE241F5EFB0067A7C7 /* Build configuration list for PBXNativeTarget "FoundationLib1Resources" */;
+			buildPhases = (
+				B1C111C5241F5EFB0067A7C7 /* Sources */,
+				B1C111C6241F5EFB0067A7C7 /* Frameworks */,
+				B1C111C7241F5EFB0067A7C7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FoundationLib1Resources;
+			productName = FoundationLib1Resources;
+			productReference = B1C111C9241F5EFB0067A7C7 /* FoundationLib1Resources.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B1BACF80241255F3004057CC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = Traveloka;
+				TargetAttributes = {
+					B1698BBD25E4DF7300070D84 = {
+						CreatedOnToolsVersion = 12.1;
+					};
+					B1698BCB25E4DF9100070D84 = {
+						CreatedOnToolsVersion = 12.1;
+						TestTargetID = B1BACFAF2416025E004057CC;
+					};
+					B1BACF91241255F4004057CC = {
+						CreatedOnToolsVersion = 11.2.1;
+						LastSwiftMigration = 1120;
+					};
+					B1BACFAF2416025E004057CC = {
+						CreatedOnToolsVersion = 11.2.1;
+						LastSwiftMigration = 1120;
+					};
+					B1C111C8241F5EFB0067A7C7 = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
+				};
+			};
+			buildConfigurationList = B1BACF83241255F3004057CC /* Build configuration list for PBXProject "FoundationLib1" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				th,
+				vi,
+				ms,
+				id,
+			);
+			mainGroup = B1BACF7F241255F3004057CC;
+			productRefGroup = B1BACF8A241255F3004057CC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B1BACF91241255F4004057CC /* FoundationLib1Tests */,
+				B1BACFAF2416025E004057CC /* SandboxApp */,
+				B1C111C8241F5EFB0067A7C7 /* FoundationLib1Resources */,
+				B1698BBD25E4DF7300070D84 /* FoundationLib1EarlGreyHelper */,
+				B1698BCB25E4DF9100070D84 /* FoundationLib1EarlGreyTest */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B1698BBC25E4DF7300070D84 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1BACF90241255F4004057CC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1BACFAE2416025E004057CC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1BACFC224160260004057CC /* LaunchScreen.storyboard in Resources */,
+				B1698C1225E4E11D00070D84 /* Localizable.strings in Resources */,
+				B1698C1125E4E11C00070D84 /* InfoPlist.strings in Resources */,
+				B102813624A203D1000BC503 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1C111C7241F5EFB0067A7C7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1C111D0241F5F310067A7C7 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5ECE77A22B40BC768C247DC7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SandboxApp-FoundationLib1Tests/Pods-SandboxApp-FoundationLib1Tests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SandboxApp-FoundationLib1Tests/Pods-SandboxApp-FoundationLib1Tests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SandboxApp-FoundationLib1Tests/Pods-SandboxApp-FoundationLib1Tests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9E7C363A57F8660855B46255 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SandboxApp/Pods-SandboxApp-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SandboxApp/Pods-SandboxApp-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SandboxApp/Pods-SandboxApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AD2CB4DD59F5983AF16A14CB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SandboxApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B19EFB8924C1A2EF00F2F696 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "${PODS_ROOT}/SwiftLint/swiftlint lint\n";
+		};
+		B59BD78610065CC3A6999617 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SandboxApp-FoundationLib1Tests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F44C7B1D8D7F621163D4CAA4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FoundationLib1EarlGreyTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FA85398CA2E7D838D37EBCA4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FoundationLib1EarlGreyHelper-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B1698BBA25E4DF7300070D84 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1698BC825E4DF9100070D84 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1698BCF25E4DF9100070D84 /* EarlGreyTest.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1BACF8E241255F4004057CC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1B16F522419F58B0057E2A7 /* Dummy.swift in Sources */,
+				B1BACFA824125688004057CC /* Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1BACFAC2416025E004057CC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1BACFBA2416025E004057CC /* ViewController.m in Sources */,
+				B1BACFB42416025E004057CC /* AppDelegate.m in Sources */,
+				B1B16F562419F5A00057E2A7 /* Dummy.swift in Sources */,
+				B1BACFC524160260004057CC /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1C111C5241F5EFB0067A7C7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B1698BF525E4E09B00070D84 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B1BACFAF2416025E004057CC /* SandboxApp */;
+			targetProxy = B1698BF425E4E09B00070D84 /* PBXContainerItemProxy */;
+		};
+		B1698BFC25E4E0B200070D84 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B1BACFAF2416025E004057CC /* SandboxApp */;
+			targetProxy = B1698BFB25E4E0B200070D84 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B1698C0D25E4E11C00070D84 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B1698C0E25E4E11C00070D84 /* Base */,
+				B1698C1D25E4E13300070D84 /* vi */,
+				B1698C1E25E4E13300070D84 /* en */,
+				B1698C1F25E4E13300070D84 /* ms */,
+				B1698C2025E4E13300070D84 /* id */,
+				B1698C2125E4E13300070D84 /* th */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		B1698C0F25E4E11C00070D84 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B1698C1025E4E11C00070D84 /* Base */,
+				B1698C1825E4E12B00070D84 /* th */,
+				B1698C1925E4E12B00070D84 /* en */,
+				B1698C1A25E4E12B00070D84 /* vi */,
+				B1698C1B25E4E12B00070D84 /* ms */,
+				B1698C1C25E4E12B00070D84 /* id */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		B1BACFC024160260004057CC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B1BACFC124160260004057CC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B1698BC125E4DF7300070D84 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F25EA258124696AC7035227C /* Pods-FoundationLib1EarlGreyHelper.debug.xcconfig */;
+			buildSettings = {
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 749C89GSR4;
+				INFOPLIST_FILE = FoundationLib1EarlGreyHelper/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				PRODUCT_BUNDLE_IDENTIFIER = com.traveloka.enterprise.FoundationLib1EarlGreyHelper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		B1698BC225E4DF7300070D84 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 49FDC5AAC286DA4639816BB6 /* Pods-FoundationLib1EarlGreyHelper.release.xcconfig */;
+			buildSettings = {
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 749C89GSR4;
+				INFOPLIST_FILE = FoundationLib1EarlGreyHelper/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				PRODUCT_BUNDLE_IDENTIFIER = com.traveloka.enterprise.FoundationLib1EarlGreyHelper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		B1698BD225E4DF9100070D84 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 00431EAE84F5F39A317BA274 /* Pods-FoundationLib1EarlGreyTest.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 749C89GSR4;
+				INFOPLIST_FILE = FoundationLib1EarlGreyTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.traveloka.enterprise.FoundationLib1EarlGreyTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = SandboxApp;
+				USER_HEADER_SEARCH_PATHS = "FoundationLib1EarlGreyHelper/**";
+			};
+			name = Debug;
+		};
+		B1698BD325E4DF9100070D84 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0FF1ABB47E1FF48CE188F324 /* Pods-FoundationLib1EarlGreyTest.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 749C89GSR4;
+				INFOPLIST_FILE = FoundationLib1EarlGreyTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.traveloka.enterprise.FoundationLib1EarlGreyTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = SandboxApp;
+				USER_HEADER_SEARCH_PATHS = "FoundationLib1EarlGreyHelper/**";
+			};
+			name = Release;
+		};
+		B1BACF9B241255F4004057CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_FoundationLib1_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B1BACF9C241255F4004057CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_FoundationLib1_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B1BACFA1241255F4004057CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4F2A61957CAB15E4416395B9 /* Pods-SandboxApp-FoundationLib1Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 749C89GSR4;
+				GCC_PREFIX_HEADER = "Tests/Tests-Prefix.pch";
+				INFOPLIST_FILE = Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.traveloka.FoundationLib1Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B1BACFA2241255F4004057CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FA9DFE832C13699B556A8BEB /* Pods-SandboxApp-FoundationLib1Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 749C89GSR4;
+				GCC_PREFIX_HEADER = "Tests/Tests-Prefix.pch";
+				INFOPLIST_FILE = Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.traveloka.FoundationLib1Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B1BACFC624160260004057CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8C4A5839E972085D5A3149F1 /* Pods-SandboxApp.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 749C89GSR4;
+				INFOPLIST_FILE = "SandboxApp/Traveloka Staging-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.traveloka.SandboxApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		B1BACFC724160260004057CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FC4B1B32A51D6679F0AAF7FF /* Pods-SandboxApp.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 749C89GSR4;
+				INFOPLIST_FILE = "SandboxApp/Traveloka Staging-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.traveloka.SandboxApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		B1C111CC241F5EFB0067A7C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 749C89GSR4;
+				INFOPLIST_FILE = FoundationLib1Resources/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				PRODUCT_BUNDLE_IDENTIFIER = com.traveloka.FoundationLib1Resources;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		B1C111CD241F5EFB0067A7C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 749C89GSR4;
+				INFOPLIST_FILE = FoundationLib1Resources/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				PRODUCT_BUNDLE_IDENTIFIER = com.traveloka.FoundationLib1Resources;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B1698BC325E4DF7300070D84 /* Build configuration list for PBXNativeTarget "FoundationLib1EarlGreyHelper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B1698BC125E4DF7300070D84 /* Debug */,
+				B1698BC225E4DF7300070D84 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B1698BD125E4DF9100070D84 /* Build configuration list for PBXNativeTarget "FoundationLib1EarlGreyTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B1698BD225E4DF9100070D84 /* Debug */,
+				B1698BD325E4DF9100070D84 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B1BACF83241255F3004057CC /* Build configuration list for PBXProject "FoundationLib1" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B1BACF9B241255F4004057CC /* Debug */,
+				B1BACF9C241255F4004057CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B1BACFA0241255F4004057CC /* Build configuration list for PBXNativeTarget "FoundationLib1Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B1BACFA1241255F4004057CC /* Debug */,
+				B1BACFA2241255F4004057CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B1BACFC824160260004057CC /* Build configuration list for PBXNativeTarget "SandboxApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B1BACFC624160260004057CC /* Debug */,
+				B1BACFC724160260004057CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B1C111CE241F5EFB0067A7C7 /* Build configuration list for PBXNativeTarget "FoundationLib1Resources" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B1C111CC241F5EFB0067A7C7 /* Debug */,
+				B1C111CD241F5EFB0067A7C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B1BACF80241255F3004057CC /* Project object */;
+}

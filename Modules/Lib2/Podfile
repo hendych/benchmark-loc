@@ -1,0 +1,53 @@
+require_relative '../../Scripts/pod_post_install'
+
+install! 'cocoapods',
+:generate_multiple_pod_projects => true,
+:incremental_installation => true
+
+
+source 'https://cdn.cocoapods.org/'
+source 'git@github.com:traveloka/Specs.git'
+
+platform :ios, '12.0'
+inhibit_all_warnings!
+use_frameworks! :linkage => :static
+
+ENV['SWIFT_VERSION'] = '5'
+
+def module_dependency_pod
+
+  pod 'SharedLib1', :path => '../SharedLib1'
+  pod 'FoundationLib1', :path => '../FoundationLib1' 
+  pod 'FoundationLib2', :path => '../FoundationLib2' 
+
+end
+
+target 'SandboxApp' do
+  module_dependency_pod
+
+  pod 'Lib2', :path => '.'
+
+  
+
+  target 'Lib2Tests' do
+  end
+
+  target 'Lib2EarlGreyHelper' do
+    inherit! :search_paths
+    
+  end 
+end
+
+target 'Lib2EarlGreyTest' do
+  pod 'OCMock', '= 3.4.1'
+end
+
+
+post_install do |installer|
+
+  # Overwriting Header Search Paths
+  overwrite_header_search_path(installer, 'Pods-SandboxApp')
+
+  # Auto Generated Umbrella Header for Internal Modules
+  auto_generate_umbrella_header_modules(installer)
+end

@@ -1,0 +1,66 @@
+---
+included:
+- Lib1
+- Lib2
+- SharedLib1
+- FoundationLib1
+- FoundationLib2
+excluded:
+- Lib1Tests
+- Lib2Tests
+- SharedLib1Tests
+- FoundationLib1Tests
+- FoundationLib2Tests
+only_rules:
+- control_statement
+- force_unwrapping
+- force_cast
+- identifier_name
+- trailing_semicolon
+- line_length
+- explicit_type_interface
+- legacy_constructor
+- legacy_constant
+- legacy_cggeometry_functions
+- legacy_nsgeometry_functions
+- return_arrow_whitespace
+- redundant_void_return
+- void_return
+- unused_closure_parameter
+- closure_spacing
+- operator_usage_whitespace
+- implicitly_unwrapped_optional
+- explicit_init
+- sorted_imports
+- closing_brace
+- comma
+- duplicate_enum_cases
+- duplicate_imports
+- statement_position
+identifier_name:
+  min_length:
+    error: 2
+trailing_semicolon:
+  severity: error
+line_length:
+  warning: 200
+  ignores_function_declarations: true
+  ignores_comments: true
+  ignores_interpolated_strings: true
+  ignores_urls: true
+statement_position:
+  statement_mode: uncuddled_else
+control_statement:
+  severity: error
+force_unwrapping:
+  severity: error
+implicitly_unwrapped_optional:
+  severity: error
+weak_delegate:
+  severity: error
+explicit_type_interface:
+  severity: error
+force_cast:
+  severity: warning
+duplicate_imports:
+  severity: error

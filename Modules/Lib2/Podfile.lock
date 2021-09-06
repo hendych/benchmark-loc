@@ -1,0 +1,41 @@
+PODS:
+  - FoundationLib1 (0.1.0)
+  - FoundationLib2 (0.1.0)
+  - Lib2 (0.1.0):
+    - SharedLib1
+  - OCMock (3.4.1)
+  - SharedLib1 (0.1.0):
+    - FoundationLib1
+    - FoundationLib2
+
+DEPENDENCIES:
+  - FoundationLib1 (from `../FoundationLib1`)
+  - FoundationLib2 (from `../FoundationLib2`)
+  - Lib2 (from `.`)
+  - OCMock (= 3.4.1)
+  - SharedLib1 (from `../SharedLib1`)
+
+SPEC REPOS:
+  trunk:
+    - OCMock
+
+EXTERNAL SOURCES:
+  FoundationLib1:
+    :path: "../FoundationLib1"
+  FoundationLib2:
+    :path: "../FoundationLib2"
+  Lib2:
+    :path: "."
+  SharedLib1:
+    :path: "../SharedLib1"
+
+SPEC CHECKSUMS:
+  FoundationLib1: fd78a51f301ef46e7ce825f3e68bf2a07b612ed4
+  FoundationLib2: b52c37fb434d8e0c847f40d8734401392fadd0c9
+  Lib2: b2cd9e8d74f59310f6791b311ecce0c38b401eca
+  OCMock: 2cd0716969bab32a2283ff3a46fd26a8c8b4c5e3
+  SharedLib1: e371b81327cc1fbe98a5a0c211cbceadac38a035
+
+PODFILE CHECKSUM: d0d93f14e1b6575bfab5415f603b4e1a828df4d2
+
+COCOAPODS: 1.10.1

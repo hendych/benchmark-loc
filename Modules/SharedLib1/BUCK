@@ -1,0 +1,56 @@
+load("//Config:buck_rule_macros.bzl", "apple_test_lib", "apple_third_party_lib", "apple_create_bundle_resource")
+load("//Config:app_configs.bzl", "PREBUILT_FRAMEWORKS", "MODULE_TEST")
+
+apple_third_party_lib(
+    name = "SharedLib1",
+    srcs = glob([
+        "SharedLib1/**/*.swift",
+        "SharedLib1/**/*.m",
+    ]),
+    exported_headers = glob([
+        "SharedLib1/**/*.h"
+    ]),
+    deps = [
+        ":SharedLib1ResourceBundle",
+
+        "//Modules/TVLFoundation:TVLFoundation",
+        "//Modules/TVLUI:TVLUI",
+        "//Modules/TVLKit:TVLKit",
+        "//Modules/TVLStorage:TVLStorage",
+        "//Modules/TVLNetwork:TVLNetwork",
+    ],
+    frameworks = [
+        "$SDKROOT/System/Library/Frameworks/Foundation.framework",
+        "$SDKROOT/System/Library/Frameworks/UIKit.framework",
+    ]
+)
+
+apple_test_lib(
+    name = "SharedLib1Tests",
+    srcs = glob([
+        "Tests/**/*.m",
+        "Tests/**/*.swift"
+    ]),
+    preprocessor_flags = [
+        "-I$(location //Modules/SharedLib1:SharedLib1#iphonesimulator-x86_64,private-headers)"
+    ],
+    deps = [
+        # All Deps
+        ":SharedLib1",
+    ] + MODULE_TEST + PREBUILT_FRAMEWORKS
+)
+
+# Resources
+
+apple_create_bundle_resource(
+    rule_name = "SharedLib1ResourceBundle",
+    bundle_resource_name = "SharedLib1Resources",
+    info_plist = 'SharedLib1Resources/Info.plist',
+    image_xcassets_dirs = [
+        "SharedLib1Resources/Images.xcassets"
+    ],
+    resource_dirs = glob([
+        "SharedLib1Resources/**/*.xib",
+        "SharedLib1/**/*.xib"
+    ]),
+)
