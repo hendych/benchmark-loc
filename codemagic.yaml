@@ -12,4 +12,5 @@ workflows:
           include: true
           source: true
     scripts:
-      - pwd && ls -al 
+      - cd Modules/Lib1 && pod install
+      - xcodebuild build -workspace 'Lib1.xcworkspace' -scheme 'SandboxApp' -sdk 'iphonesimulator'
