@@ -13,8 +13,12 @@ workflows:
           source: true
     cache:
       cache_paths:
-        - ~/Modules/Lib1/Pods/
-        - ~/Modules/Lib1/Podfile.lock
+        - Modules/Lib1/Pods/
+        - Modules/Lib1/Podfile.lock
     scripts:
-      - cd Modules/Lib1 && pod install
-      - xcodebuild build -workspace 'Lib1.xcworkspace' -scheme 'SandboxApp' -sdk 'iphonesimulator'
+      - name: Install Cocoapods Dependencies
+        working_directory: Modules/Lib1
+        script: pod install
+      - name: Xcode Build
+        working_directory: Modules/Lib1
+        script: xcodebuild build -workspace 'Lib1.xcworkspace' -scheme 'SandboxApp' -sdk 'iphonesimulator'
