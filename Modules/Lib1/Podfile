@@ -6,7 +6,6 @@ install! 'cocoapods',
 
 
 source 'https://cdn.cocoapods.org/'
-source 'git@github.com:traveloka/Specs.git'
 
 platform :ios, '12.0'
 inhibit_all_warnings!
@@ -22,8 +21,6 @@ def module_dependency_pod
 
   # SwiftLinting
   pod 'SwiftLint', "= 0.37.0"
-  
-  pod 'SendBirdWebRTC', :git => 'https://github.com/sendbird/sendbird-webrtc-ios.git', :tag => 'v1.0'
 
 end
 

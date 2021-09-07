@@ -11,6 +11,10 @@ workflows:
         - pattern: '*'
           include: true
           source: true
+    cache:
+      cache_paths:
+        - ~/Modules/Lib1/Pods/
+        - ~/Modules/Lib1/Podfile.lock
     scripts:
       - cd Modules/Lib1 && pod install
       - xcodebuild build -workspace 'Lib1.xcworkspace' -scheme 'SandboxApp' -sdk 'iphonesimulator'
