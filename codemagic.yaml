@@ -7,9 +7,9 @@ workflows:
       events:
         - push
         - pull_request
-    branch_patterns:
-      - pattern: '*'
-        include: true
-        source: true
+      branch_patterns:
+        - pattern: '*'
+          include: true
+          source: true
     scripts:
       - pwd && ls -al 
