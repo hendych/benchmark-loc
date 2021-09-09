@@ -13,8 +13,8 @@ workflows:
           source: true
     cache:
       cache_paths:
-        - Modules/Lib1/Pods/
-        - Modules/Lib1/Podfile.lock
+        - /Users/builder/clone/Modules/Lib1/Pods
+        - /Users/builder/clone/Modules/Lib1/Podfile.lock
     scripts:
       - name: Install Cocoapods Dependencies
         working_directory: Modules/Lib1
